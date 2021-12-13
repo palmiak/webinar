@@ -1,0 +1,21 @@
+{
+    "require": {
+        "mustache/mustache": "^2.13"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*",
+        "phpstan/phpstan": "^1.2",
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+		"psr-4": {
+		  "Webinar\\":"src/"
+		}
+	},
+    "scripts": {
+        "phpcs": "vendor/bin/phpcs -s --standard=psr2 --ignore=*/tests/phpstan/*,*.js,*/vendor/* ./",
+        "phpcbf": "vendor/bin/phpcbf --standard=psr2 --ignore=*/tests/phpstan/*,*.js,*/vendor/* ./",
+        "phpstan": "vendor/bin/phpstan analyse -l 5 src",
+        "phpunit": "vendor/bin/phpunit ./tests/unit"
+	}
+}
