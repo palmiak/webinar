@@ -1,5 +1,6 @@
 <?php
 namespace Webinar;
+
 require_once __DIR__ . '/vendor/autoload.php';
 
 $main = new Main;
