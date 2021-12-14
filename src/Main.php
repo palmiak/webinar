@@ -5,7 +5,7 @@ class Main
 {
     public function cmsList()
     {
-        $cmsList = [ 'WordPress', 'Drupal', 'Joomla' ];
+        $cmsList = [ 'WordPress', 'Drupal', 'Joomla', 'Shopify' ];
         return $cmsList;
     }
 }
